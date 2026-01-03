@@ -1,4 +1,5 @@
 # SU(2) Lattice Gauge Theory on a Finite 2D Lattice (Closed Boundary Conditions)
+<img width="1316" height="652" alt="image" src="https://github.com/user-attachments/assets/1331af50-6142-4fb1-b906-80c6bca23de0" />
 
 This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **loop / prepotential (electric flux) basis**, with **Gauss law constraints enforced exactly** at every lattice site.
 
