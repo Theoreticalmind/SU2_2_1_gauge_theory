@@ -16,9 +16,7 @@ Each loop state is mapped to a sequence of local vertex configurations.
 
 #### Loop State: \( 123 \)
 
-$[\
-[l_{12}, l_{13}, l_{23}]
-\]$
+$[l_{12}, l_{13}, l_{23}]$
 
 ```text
 [
@@ -26,9 +24,7 @@ $[\
 ]
 ```
 #### Loop State: \( 234 \)
-$[\
-[l_{12}, l_{13}, l_{23}] 
-\]$
+$[l_{12}, l_{13}, l_{23}]$
 
 ```text
 [
@@ -36,16 +32,14 @@ $[\
 ]
 ```
 #### Loop State: \( 341 \)
-$[\
-[l_{12}, l_{13}, l_{23}] 
-\]$
+$[l_{12}, l_{13}, l_{23}]$
 
 ```text
 [
  [0,0,0],[1,0,0],[0,1,0],[0,0,1],[0,0,0],[0,0,0],[0,0,1],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[0,1,0],[1,0,0],[0,0,0]
 ]
 ```
-This states have rotational symmetry and 1,2,3,4 plaquettes have reflection symmetry.
+This states have rotational symmetry and similary we can write $[l_{12}, l_{13}, l_{23}]$ for 1,2,3,4 single plaquettes loop states which might have reflection symmetry.
 This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **lsh basis**, with **Gauss law constraints enforced exactly** at every lattice site.
 
 The code explicitly constructs the **physical gauge-invariant Hilbert space**, builds the **full Hamiltonian (electric + magnetic plaquette terms)**, diagonalizes it, and analyzes **energy spectra and degeneracies** for small lattice sizes.
