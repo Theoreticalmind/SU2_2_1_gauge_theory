@@ -1,5 +1,102 @@
 # SU(2) Lattice Gauge Theory on a Finite 2D Lattice (Closed Boundary Conditions)
 <img width="1316" height="652" alt="image" src="https://github.com/user-attachments/assets/1331af50-6142-4fb1-b906-80c6bca23de0" />
+This is 
+### Loop-State Representation on a Hexagonal Lattice (via Point Splitting)
+
+We embed the square lattice into a **hexagonal lattice** using the **point-splitting construction**.  
+Each local loop state is labeled by three integers
+\[
+[l_{12},\, l_{13},\, l_{23}],
+\]
+which count the number of flux lines shared between the corresponding pairs of split links.
+
+Below we list the explicit hexagonal-lattice representations of different loop states.  
+Each loop state is mapped to a sequence of local vertex configurations, written as ordered triples.
+
+---
+
+#### Loop State: \( 123 \)
+
+\[
+[l_{12}, l_{13}, l_{23}] = [1,1,1]
+\]
+
+```text
+[
+ [0,0,0],
+ [1,0,0],
+ [0,1,0],
+ [0,1,0],
+ [0,1,0],
+ [0,0,1],
+ [0,0,1],
+ [0,1,0],
+ [0,1,0],
+ [0,0,1],
+ [0,1,0],
+ [0,0,1],
+ [0,0,0],
+ [0,0,0],
+ [0,0,1],
+ [0,1,0],
+ [1,0,0],
+ [0,0,0]
+]
+```
+#### Loop State: \( 234 \)
+\[
+[l_{12}, l_{13}, l_{23}] 
+\]
+
+```text
+[
+ [0,0,0],
+ [0,0,0],
+ [0,0,0],
+ [1,0,0],
+ [0,1,0],
+ [0,0,1],
+ [0,0,0],
+ [1,0,0],
+ [1,0,0],
+ [0,0,0],
+ [1,0,0],
+ [0,0,1],
+ [0,0,1],
+ [0,1,0],
+ [0,1,0],
+ [0,1,0],
+ [1,0,0],
+ [0,0,0]
+]
+```
+#### Loop State: \( 341 \)
+\[
+[l_{12}, l_{13}, l_{23}] 
+\]
+
+```text
+[
+ [0,0,0],
+ [1,0,0],
+ [0,1,0],
+ [0,0,1],
+ [0,0,0],
+ [0,0,0],
+ [0,0,1],
+ [0,0,1],
+ [0,0,1],
+ [0,1,0],
+ [0,1,0],
+ [0,0,1],
+ [0,0,1],
+ [0,1,0],
+ [0,1,0],
+ [0,1,0],
+ [1,0,0],
+ [0,0,0]
+]
+
 
 This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **loop / prepotential (electric flux) basis**, with **Gauss law constraints enforced exactly** at every lattice site.
 
@@ -19,10 +116,10 @@ This project is intended for **theoretical, numerical, and pedagogical studies**
 - **Electric flux cutoff:** Finite truncation (`cut`)
 - **Hamiltonian:**
   
-  \[
+  $\[
   H = \frac{g^2}{4} \sum_{\text{links}} E^2 
   + \frac{1}{g^2} \sum_{\square} \left( 2\,\mathrm{Tr}\,U_{\square} \right)
-  \]
+  \]$
 
 ---
 
@@ -38,33 +135,7 @@ This project is intended for **theoretical, numerical, and pedagogical studies**
 - Visualization of the complete energy spectrum
 
 ---
+## Author
 
-## Code Overview
-
-### 1. Local Gauge-Invariant Vertex Space
-
-```python
-discrete_local_h_space(cut)
-```
-### Local Gauge-Invariant Vertex Space
-
-Generates all allowed **three-leg SU(2) vertices** subject to a finite **electric-flux cutoff**.
-
-Each vertex is labeled by three non-negative integers  
-\[
-(i, j, k)
-\]
-corresponding to SU(2) electric flux quantum numbers on the three links meeting at a vertex.
-
-The allowed vertices satisfy the cutoff constraints:
-\[
-i + j \le \text{cut}, \quad
-j + k \le \text{cut}, \quad
-k + i \le \text{cut}.
-\]
-
-These inequalities ensure that the total electric flux entering the vertex remains finite and that all representations lie within the truncated Hilbert space.
-
-The resulting set of vertices forms the **local gauge-invariant building blocks** of the lattice.  
-They serve as the fundamental degrees of freedom used to construct the full many-body, gauge-invariant Hilbert space of the lattice gauge theory.
+**Md Osama Ali**
 
