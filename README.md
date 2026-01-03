@@ -5,9 +5,9 @@ This is
 
 We embed the square lattice into a **hexagonal lattice** using the **point-splitting construction**.  
 Each local loop state is labeled by three integers
-$\
+$[\
 [l_{12},\, l_{13},\, l_{23}]
-\$
+\]$
 this is loop states for different configurations.
 
 Below we list the explicit hexagonal-lattice representations of different loop states.  
@@ -17,9 +17,9 @@ Each loop state is mapped to a sequence of local vertex configurations.
 
 #### Loop State: \( 123 \)
 
-$\
+$[\
 [l_{12}, l_{13}, l_{23}]
-\$
+\]$
 
 ```text
 [
@@ -27,9 +27,9 @@ $\
 ]
 ```
 #### Loop State: \( 234 \)
-$\
+$[\
 [l_{12}, l_{13}, l_{23}] 
-\$
+\]$
 
 ```text
 [
@@ -37,9 +37,9 @@ $\
 ]
 ```
 #### Loop State: \( 341 \)
-$\
+$[\
 [l_{12}, l_{13}, l_{23}] 
-\$
+\]$
 
 ```text
 [
