@@ -54,7 +54,7 @@ The code explicitly constructs the **physical gauge-invariant Hilbert space**, b
 
 - **Gauge group:** SU(2)
 - **Spatial dimension:** 2D lattice (Hamiltonian formulation)
-- **Boundary condition:** Closed / open boundary (no periodic wrapping)
+- **Boundary condition:** Closed  boundary 
 - **Hilbert space:** Gauge-invariant loop basis
 - **Gauss law:** Enforced exactly at every vertex
 - **Electric flux cutoff:** Finite truncation (`cut`)
