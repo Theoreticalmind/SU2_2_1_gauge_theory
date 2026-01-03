@@ -45,7 +45,7 @@ This project is intended for **theoretical, numerical, and pedagogical studies**
 
 ```python
 discrete_local_h_space(cut)
-
+```
 ### Local Gauge-Invariant Vertex Space
 
 Generates all allowed **three-leg SU(2) vertices** subject to a finite **electric-flux cutoff**.
