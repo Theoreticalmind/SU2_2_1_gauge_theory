@@ -40,6 +40,9 @@ $[l_{12}, l_{13}, l_{23}]$
 ]
 ```
 This states have rotational symmetry and similary we can write $[l_{12}, l_{13}, l_{23}]$ for 1,2,3,4 single plaquettes loop states which might have reflection symmetry.
+
+
+
 This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **lsh basis**, with **Gauss law constraints enforced exactly** at every lattice site.
 
 The code explicitly constructs the **physical gauge-invariant Hilbert space**, builds the **full Hamiltonian (electric + magnetic plaquette terms)**, diagonalizes it, and analyzes **energy spectra and degeneracies** for small lattice sizes.
