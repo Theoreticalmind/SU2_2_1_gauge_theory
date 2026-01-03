@@ -17,9 +17,9 @@ Each loop state is mapped to a sequence of local vertex configurations, written 
 
 #### Loop State: \( 123 \)
 
-\[
+$\[
 [l_{12}, l_{13}, l_{23}]
-\]
+\]$
 
 ```text
 [
@@ -27,9 +27,9 @@ Each loop state is mapped to a sequence of local vertex configurations, written 
 ]
 ```
 #### Loop State: \( 234 \)
-\[
+$\[
 [l_{12}, l_{13}, l_{23}] 
-\]
+\]$
 
 ```text
 [
@@ -37,15 +37,15 @@ Each loop state is mapped to a sequence of local vertex configurations, written 
 ]
 ```
 #### Loop State: \( 341 \)
-\[
+$\[
 [l_{12}, l_{13}, l_{23}] 
-\]
+\]$
 
 ```text
 [
  [0,0,0],[1,0,0],[0,1,0],[0,0,1],[0,0,0],[0,0,0],[0,0,1],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[0,1,0],[1,0,0],[0,0,0]
 ]
-
+```
 
 This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **lsh basis**, with **Gauss law constraints enforced exactly** at every lattice site.
 
