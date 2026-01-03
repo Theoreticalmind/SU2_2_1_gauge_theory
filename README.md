@@ -61,7 +61,7 @@ The code explicitly constructs the **physical gauge-invariant Hilbert space**, b
 - **Hamiltonian:**
   
   $\[
-  H = \frac{g^2}{4} \sum_{\text{links}} E^2 + \frac{1}{g^2} \sum_{\square} \left( 2\,\mathrm{Tr}\,U_{\square} \right)
+  H = \frac{g^2}{4} \sum_{\text{links}} E^2 + \frac{1}{g^2} \sum_{\square} \left( 2\mathrm{Tr}U_{\square} \right)
   \]$
 
 ---
