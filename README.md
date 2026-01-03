@@ -1,6 +1,6 @@
 # SU(2) 2+1 D Lattice Gauge Theory(Closed Boundary Conditions)
 <img width="1316" height="652" alt="image" src="https://github.com/user-attachments/assets/1331af50-6142-4fb1-b906-80c6bca23de0" />
-This is 
+
 ### Loop-State Representation on a Hexagonal Lattice (via Point Splitting)
 
 We embed the square lattice into a **hexagonal lattice** using the **point-splitting construction**.  
