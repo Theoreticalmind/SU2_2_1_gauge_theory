@@ -5,13 +5,13 @@ This is
 
 We embed the square lattice into a **hexagonal lattice** using the **point-splitting construction**.  
 Each local loop state is labeled by three integers
-\[
+$\[
 [l_{12},\, l_{13},\, l_{23}],
-\]
-which count the number of flux lines shared between the corresponding pairs of split links.
+\]$
+this is loop states for different configurations.
 
 Below we list the explicit hexagonal-lattice representations of different loop states.  
-Each loop state is mapped to a sequence of local vertex configurations, written as ordered triples.
+Each loop state is mapped to a sequence of local vertex configurations.
 
 ---
 
@@ -51,7 +51,6 @@ This repository contains a **from-scratch exact diagonalization (ED) implementat
 
 The code explicitly constructs the **physical gauge-invariant Hilbert space**, builds the **full Hamiltonian (electric + magnetic plaquette terms)**, diagonalizes it, and analyzes **energy spectra and degeneracies** for small lattice sizes.
 
-This project is intended for **theoretical, numerical, and pedagogical studies** of non-Abelian lattice gauge theories.
 
 ---
 
@@ -66,8 +65,7 @@ This project is intended for **theoretical, numerical, and pedagogical studies**
 - **Hamiltonian:**
   
   $\[
-  H = \frac{g^2}{4} \sum_{\text{links}} E^2 
-  + \frac{1}{g^2} \sum_{\square} \left( 2\,\mathrm{Tr}\,U_{\square} \right)
+  H = \frac{g^2}{4} \sum_{\text{links}} E^2 + \frac{1}{g^2} \sum_{\square} \left( 2\,\mathrm{Tr}\,U_{\square} \right)
   \]$
 
 ---
@@ -85,6 +83,5 @@ This project is intended for **theoretical, numerical, and pedagogical studies**
 
 ---
 ## Author
-
 **Md Osama Ali**
 
