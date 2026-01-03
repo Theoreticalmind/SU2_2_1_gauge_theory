@@ -5,9 +5,7 @@ This is
 
 We embed the square lattice into a **hexagonal lattice** using the **point-splitting construction**.  
 Each local loop state is labeled by three integers
-\[
-[l_{12},\, l_{13},\, l_{23}]
-\]
+$[l_{12}, l_{13}, l_{23}]$
 
 this is loop states for different configurations.
 
