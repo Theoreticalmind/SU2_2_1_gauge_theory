@@ -45,3 +45,26 @@ This project is intended for **theoretical, numerical, and pedagogical studies**
 
 ```python
 discrete_local_h_space(cut)
+
+### Local Gauge-Invariant Vertex Space
+
+Generates all allowed **three-leg SU(2) vertices** subject to a finite **electric-flux cutoff**.
+
+Each vertex is labeled by three non-negative integers  
+\[
+(i, j, k)
+\]
+corresponding to SU(2) electric flux quantum numbers on the three links meeting at a vertex.
+
+The allowed vertices satisfy the cutoff constraints:
+\[
+i + j \le \text{cut}, \quad
+j + k \le \text{cut}, \quad
+k + i \le \text{cut}.
+\]
+
+These inequalities ensure that the total electric flux entering the vertex remains finite and that all representations lie within the truncated Hilbert space.
+
+The resulting set of vertices forms the **local gauge-invariant building blocks** of the lattice.  
+They serve as the fundamental degrees of freedom used to construct the full many-body, gauge-invariant Hilbert space of the lattice gauge theory.
+
