@@ -18,29 +18,12 @@ Each loop state is mapped to a sequence of local vertex configurations, written 
 #### Loop State: \( 123 \)
 
 \[
-[l_{12}, l_{13}, l_{23}] = [1,1,1]
+[l_{12}, l_{13}, l_{23}]
 \]
 
 ```text
 [
- [0,0,0],
- [1,0,0],
- [0,1,0],
- [0,1,0],
- [0,1,0],
- [0,0,1],
- [0,0,1],
- [0,1,0],
- [0,1,0],
- [0,0,1],
- [0,1,0],
- [0,0,1],
- [0,0,0],
- [0,0,0],
- [0,0,1],
- [0,1,0],
- [1,0,0],
- [0,0,0]
+ [0,0,0],[1,0,0],[0,1,0],[0,1,0],[0,1,0],[0,0,1],[0,0,1], [0,1,0],[0,1,0],[0,0,1],[0,1,0],[0,0,1],[0,0,0], [0,0,0],[0,0,1],[0,1,0],[1,0,0],[0,0,0]
 ]
 ```
 #### Loop State: \( 234 \)
@@ -50,24 +33,7 @@ Each loop state is mapped to a sequence of local vertex configurations, written 
 
 ```text
 [
- [0,0,0],
- [0,0,0],
- [0,0,0],
- [1,0,0],
- [0,1,0],
- [0,0,1],
- [0,0,0],
- [1,0,0],
- [1,0,0],
- [0,0,0],
- [1,0,0],
- [0,0,1],
- [0,0,1],
- [0,1,0],
- [0,1,0],
- [0,1,0],
- [1,0,0],
- [0,0,0]
+ [0,0,0],[0,0,0],[0,0,0],[1,0,0],[0,1,0],[0,0,1],[0,0,0],[1,0,0],[1,0,0],[0,0,0],[1,0,0],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[0,1,0],[1,0,0],[0,0,0]
 ]
 ```
 #### Loop State: \( 341 \)
@@ -77,28 +43,11 @@ Each loop state is mapped to a sequence of local vertex configurations, written 
 
 ```text
 [
- [0,0,0],
- [1,0,0],
- [0,1,0],
- [0,0,1],
- [0,0,0],
- [0,0,0],
- [0,0,1],
- [0,0,1],
- [0,0,1],
- [0,1,0],
- [0,1,0],
- [0,0,1],
- [0,0,1],
- [0,1,0],
- [0,1,0],
- [0,1,0],
- [1,0,0],
- [0,0,0]
+ [0,0,0],[1,0,0],[0,1,0],[0,0,1],[0,0,0],[0,0,0],[0,0,1],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[0,0,1],[0,0,1],[0,1,0],[0,1,0],[0,1,0],[1,0,0],[0,0,0]
 ]
 
 
-This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **loop / prepotential (electric flux) basis**, with **Gauss law constraints enforced exactly** at every lattice site.
+This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **lsh basis**, with **Gauss law constraints enforced exactly** at every lattice site.
 
 The code explicitly constructs the **physical gauge-invariant Hilbert space**, builds the **full Hamiltonian (electric + magnetic plaquette terms)**, diagonalizes it, and analyzes **energy spectra and degeneracies** for small lattice sizes.
 
