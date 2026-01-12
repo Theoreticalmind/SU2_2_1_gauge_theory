@@ -40,7 +40,8 @@ $[l_{12}, l_{13}, l_{23}]$
 ]
 ```
 This states have rotational symmetry and similary we can write $[l_{12}, l_{13}, l_{23}]$ for 1,2,3,4 single plaquettes loop states which might have reflection symmetry.
-
+linear combination of degenerate states
+<img width="1302" height="562" alt="image" src="https://github.com/user-attachments/assets/14ece8dc-2c7e-45d6-9f8c-dbeb4b9e85fd" />
 
 
 This repository contains a **from-scratch exact diagonalization (ED) implementation** of **(2+1)-dimensional SU(2) lattice gauge theory** formulated in the **lsh basis**, with **Gauss law constraints enforced exactly** at every lattice site.
